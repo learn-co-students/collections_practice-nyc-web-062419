@@ -23,7 +23,8 @@ end
 
 def kesha_maker(array)
 	array.collect do |element|
-		element[0..1] + "$" + element[3..element.length]
+		element[2] = "$"
+		element
 	end
 end
 
